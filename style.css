@@ -1,0 +1,109 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #E4E0E1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #D6C0B3;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    border: 3px solid #AB886D;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: left;
+    font-size: 2.2em;
+    color: #493628;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #AB886D;
+    padding-bottom: 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #493628;
+    font-size: 1em;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #AB886D;
+    background-color: #E4E0E1;
+    color: #493628;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus, textarea:focus {
+    border: 2px solid #493628;
+    outline: none;
+    background-color: #fff;
+}
+
+input[type="range"] {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.checkbox-group label,
+.seleccion label {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 0.95em;
+    color: #493628;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    background-color: #AB886D;
+    color: #fff;
+    padding: 14px;
+    border: none;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #493628;
+}
+
+.img-submit {
+    display: block;
+    margin: 25px auto 10px auto;
+    width: 60px;
+    height: auto;
+}

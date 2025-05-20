@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Apps Script</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="form-container">
+            <header>
+                <h1>Formulario Apps Script</h1>
+            </header>
+            <main>
+                <form id="formulario" method="post" action="formulario.php" target="_blank">
+                    <fieldset>
+                        <section>
+                            <label for="usuario">Usuario:</label>
+                            <input type="text" id="usuario" name="nombre" required>
+                        </section>
+
+                        <section>
+                            <label for="puesto">Puesto de trabajo:</label>
+                            <select id="puesto" name="cargo" required>
+                                <option value="desarrollador">Desarrollador</option>
+                                <option value="grafista">Grafista</option>
+                                <option value="qa">QA</option>
+                                <option value="jefeEquipo">Jefe de Equipo</option>
+                                <option value="it">IT</option>
+                            </select>
+                        </section>
+
+                        <section>
+                            <label for="progreso">Estado de la tarea:</label>
+                            <input type="range" id="progreso" name="estadoTarea" min="0" max="100" value="0" step="5" required>
+                        </section>
+
+                        <section>
+                            <label for="inicio">Fecha de inicio:</label>
+                            <input type="date" id="inicio" name="fechaInicio" required>
+
+                            <label for="fin">Fecha de finalización:</label>
+                            <input type="date" id="fin" name="fechaFin">
+                        </section>
+
+                        <section>
+                            <p>Tarea completada a tiempo:</p>
+                            <div class="seleccion">
+                                <input type="radio" id="tiempo_si" name="aTiempo" value="si">
+                                <label for="tiempo_si">Sí</label>
+                                <input type="radio" id="tiempo_no" name="aTiempo" value="no">
+                                <label for="tiempo_no">No</label>
+                            </div>
+                        </section>
+
+                        <section>
+                            <p>Tipo de tarea (opcional):</p>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="chk_codigo" name="codigo" value="codigo">
+                                <label for="chk_codigo">Código</label>
+                                <input type="checkbox" id="chk_grafismo" name="grafismo" value="grafismo">
+                                <label for="chk_grafismo">Grafismo</label>
+                                <input type="checkbox" id="chk_test" name="test" value="test">
+                                <label for="chk_test">Test</label>
+                                <input type="checkbox" id="chk_bug" name="bug" value="bug">
+                                <label for="chk_bug">Bug</label>
+                                <input type="checkbox" id="chk_doc" name="documentacion" value="documentacion">
+                                <label for="chk_doc">Documentación</label>
+                            </div>
+                        </section>
+
+                        <section>
+                            <label for="tareaRelacionada">Tarea padre:</label>
+                            <select id="tareaRelacionada" name="tareaPadre">
+                                <option value="">Ninguna</option>
+                                <option value="Padre1">Padre 1</option>
+                                <option value="Padre2">Padre 2</option>
+                                <option value="Padre3">Padre 3</option>
+                                <option value="Padre4">Padre 4</option>
+                            </select>
+                        </section>
+
+                        <section>
+                            <label for="detalle">Descripción:</label>
+                            <textarea id="detalle" name="descripcion" rows="5" required></textarea>
+                        </section>
+
+                        <section>
+                            <input type="image" src="https://i.imgur.com/mf8FQKk.png" alt="Enviar" class="img-submit">
+                            <input type="reset" value="Borrar datos">
+                        </section>
+                    </fieldset>
+                </form>
+            </main>
+        </div>
+    </body>
+</html>
